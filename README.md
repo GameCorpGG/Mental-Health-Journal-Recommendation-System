@@ -56,9 +56,9 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-```bash
 ### 🌐 Frontend Setup
 
+```bash
 cd frontend
 npm install
 npm start
