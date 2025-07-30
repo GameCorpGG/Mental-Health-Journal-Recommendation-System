@@ -1,0 +1,61 @@
+.page {
+  min-height: 100vh;
+  background-image: url('/public/dashboard-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.subtext {
+  color: #6c757d;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.button {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.logout {
+  background-color: #e74c3c;
+}
+
+.logout:hover {
+  background-color: #c0392b;
+}

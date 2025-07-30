@@ -1,0 +1,63 @@
+.page {
+  min-height: 100vh;
+  background-image: url('/public/register-bg.jpg'); /* Path relative to public folder */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 380px;
+  width: 100%;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 26px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.button {
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.loginText {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
