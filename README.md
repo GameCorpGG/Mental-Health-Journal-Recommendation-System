@@ -54,9 +54,42 @@ git clone https://github.com/GameCorpGG/Mental-Health-Journal-Recommendation-Sys
 cd Mental-Health-Journal-Recommendation-System/MhjrsApplication
 mvn clean install
 mvn spring-boot:run
+```
 
+```bash
 ### 🌐 Frontend Setup
 
 cd frontend
 npm install
 npm start
+```
+
+## 🔐 Root User Bootstrapping
+When the system starts for the first time, it automatically creates a secure root user for platform governance.
+- Email: rachit181004@gmail.com
+- Password: rootpassword@123 (stored in hashed form)
+
+
+## 📡 API Overview
+| Endpoint                     | Method | Access     | Description                           |
+| ---------------------------  | ------ | ---------- | ------------------------------------- |
+| `/auth/register`             | POST   | Public     | Register new users                    |
+| `/auth/login`                | POST   | Public     | Authenticate users                    |
+| `/admin/user/all_users`      | GET    | ADMIN      | Get Details of all the users          |
+| `/admin/user/find`           | GET    | ADMIN      | Find one particular user              |
+| `/admin/user/delete`         | DELETE | ADMIN      | Delete a particular user              |
+| `/admin/content`             | GET    | ADMIN      | Fetch all content                     |
+| `/admin/content/add`         | POST   | ADMIN      | Add YouTube videos with mood tags     |
+| `/admin/content/delete`      | DELETE | ADMIN      | Delete Content from the database      |
+| `/admin/content/approve`     | POST   | ADMIN      | Approve Content                       |
+| `/admin/content/reject`      | POST   | ADMIN      | Reject Content                        |
+| `/journal/create`            | POST   | USER       | Create a Journal Entry                |
+| `/journal/history`           | GET    | USER       | View Previous Journal Entries         |
+| `/mood/log`                  | POST   | USER       | Enter your mood log                   |
+| `/recommendations/recommend` | GET    | USER       | View your recommendations             |
+
+## ✉️ Custom Mail Service
+This project uses an Inter-Process Communication (IPC) based mail service to send notifications (e.g., approval updates, registration success). The backend sends email messages through an IPC channel to a separate mail handler process.
+
+
+
