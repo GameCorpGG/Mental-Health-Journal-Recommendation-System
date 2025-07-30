@@ -49,13 +49,13 @@ A secure full-stack mental wellness platform that enables users to log moods, ma
 
 ### 🧑‍💻 Backend Setup
 
-git clone https://github.com/GameCorpGG/Mental-Health-Journal-Recommendation-System.git
-cd Mental-Health-Journal-Recommendation-System/
-mvn clean install
-mvn spring-boot:run
+>> git clone https://github.com/GameCorpGG/Mental-Health-Journal-Recommendation-System.git
+>> cd Mental-Health-Journal-Recommendation-System/MhjrsApplication
+>> mvn clean install
+>> mvn spring-boot:run
 
 ### 🌐 Frontend Setup
 
-cd frontend
-npm install
-npm start
+>> cd frontend
+>> npm install
+>> npm start
